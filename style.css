@@ -32,7 +32,7 @@ main h2 {
 	text-align: center;
 }
 
-p, ul {
+p, ul, ol {
 	font-size: 24px;
 	font-family: 'Roboto', sans-serif;
 	margin: 100px;
