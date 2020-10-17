@@ -1,32 +1,50 @@
 header {
-	background: #000000;
-	padding: 70px;
+	display: flex;
+	flex direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background: #FFFFFF;
+	padding: 30px, 10%;
 }
 
 nav {
 	color: #44C553;
-	background: #000000;
-	text-align: right;
-	font-size: 32px;
+	background: #FFFFFF;
+	/*text-align: right;*/
+	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
 }
-/*wanted to make my name and title at the top of the website display a digital green color like one would see on a computer console when coding*/
+/*Before I made myself a logo, this was the code for the subtitle or "web developer" title under my name. Leaving it here and
+commented it out just in case. 
+I wanted to make my name and title at the top of the website display a digital green color like one would 
+see on a computer console when coding
 .subtitle {
-	font-size: 60px;
+	/*font-size: 60px;
 	font-weight: bold;
 	font-family: 'Sansita Swashed', cursive;
-	color: #44C553;
+	color: #44C553;*/
 
 }
+
+hr {
+	visibility: hidden;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 20%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}
+
 h1 {
-	font-size: 72px;
+	font-size: 36px;
 	font-weight: bold;
 	font-family: 'Sansita Swashed', cursive;
 	color: #44C553;
 }
 
 main h2 {
-	font-size: 48px;
+	font-size: 25px;
 	font-weight: bold;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
@@ -39,21 +57,31 @@ p, ul, ol {
 
 }
 
+/*The code below is for my old footer. 
+
 footer {
-	/*margin: 20px;*/
-	background: #000000;
+	margin: 20px;
+	background: #AAAAAA;
 	padding-right: 70px;
 	padding-bottom: 70px;
 	padding-left: 70px;
-	/*border: 10px solid #3E4163;
-	padding: 1px*/
+	border: 10px solid #3E4163;
+	padding: 1px
+}*/
+
+footer {
+	display: flex;
+	flex-direction: column;
+	/*justify-content: space-between;
+	align-items: center;*/
+	padding: 30px, 10%;
 }
 
 h3 {
 	font-size: 30px;
 	font-family: 'Roboto', sans-serif;
 	margin: 100px;
-	color: #44C553;
+	color: #000000;
 	text-align: center;
 }
 
@@ -61,7 +89,7 @@ h3 {
 	font-size: 18px;
 	font-family: 'Roboto', sans-serif;
 	margin: 100px;
-	color: #44C553;
+	color: #000000;
 }
 
 .img {
@@ -74,7 +102,7 @@ h3 {
 }
 
 a.contact:link {
-	color: #44C553 ;
+	color: #000000;
 }
 
 a.contact:visited {
@@ -89,10 +117,40 @@ a.contact:active {
 	color: orange;
 }
 
-hr {
+hr.diamond {
 	background: #000000;
   	height: 30px;
-  /*text-align: center;*/
+  text-align: center;
   transform:rotate(45deg);
 	width: 30px;
+
+
+.group {
+	display: flex;
+	flex-direction: column;
+}
+
+.item {
+	flex: 1;
+}
+
+.item-double {
+	flex: 2;
+}
+
+@media all and (min-width: 600px) {
+	.group {
+	display: flex;
+	flex direction: row;
+	}
+
+	footer, a.contact {
+		display: flex;
+		flex-direction: row;
+		/*justify-content: space-between;*/
+		/*align-items: center;*/
+		padding: 30px, 10%;
+}
+	}
+	
 }
