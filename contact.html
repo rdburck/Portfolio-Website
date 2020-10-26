@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Richard Burck</title>
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
-	<link href="style.css" rel="stylesheet" type="text/css" />
+	<!--<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />-->
+	<link href="style.css" rel="stylesheet" type="text/css" media="all" />
 	<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@900&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
@@ -25,19 +25,28 @@
 		</nav>
 	</header>
 	<main>
-		<h2>Services</h2>
+		<h2>Contact</h2>
 		<div class="group">
 			<div class="item"></div>
 			<div class="item-two">
-			<p>I'm still developing the skills I need to serve you! Keep checking back! Hope to work wih you soon!</p>
+				<p>
+					While I already do have links below for you to get in touch with me, my coding school wants you to know that I know how to build a form. So here is a form to provide you with another way to contact me.
+				</p>
 
-			<img src = "screenshot.png" alt = "Coding screen" class = "img">
+				<form>
+    	<label for="name">Name:</label>
+    	<input id="name" type="text" name="name"
+    	placeholder="Enter your full name">
 
-			<ol>Here are the languages I'm learning:
-				<li>HTML</li>
-				<li>CSS</li>
-				<li>Javascript</li>
-		</ol>
+    	<label for="email">Email:</label>
+		<input type="email" id="email" name="email"
+		placeholder="abcd123@mail.com">
+		<br>
+    	<label for="form-message">Your message:</label>
+    	<textarea id="form-message" name="message"
+    	placeholder="How can I help you?"></textarea>
+    	<button>Submit</button>
+		</form>		
 			</div>
 			<div class="item"></div>	
 		</div>
@@ -51,5 +60,6 @@
 			<p class = "contact">(714)280-7565 (voice or text)</p>
 		</div>
 	</footer>
+	<script src="script.js"></script>
 </body>
 </html>
